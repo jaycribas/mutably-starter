@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mutably front-end</title>
+    <title>GOOD MUSIC</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Shadows+Into+Light" rel="stylesheet">
   </head>
   <body class="container">
     <div class="jumbotron">
@@ -16,24 +16,21 @@
     </div>
     <div class="col-sm-12">
       <form class="form-inline well" id="new-album-form">
+        <h5 class="addAlbumHeader form-group">Add a new album:</h6>
         <div class="form-group">
-          <label for="title">Album Name</label>
           <input type="text" class="form-control" name="name" id="name" placeholder="Album name">
         </div>
         <div class="form-group">
-          <label for="author">Artist</label>
           <input type="text" class="form-control" name="artistName" id="artistName" placeholder="Artist">
         </div>
         <div class="form-group">
-          <label for="genres">Genre</label>
           <input type="text" class="form-control" name="genres" id="genres" placeholder="Genres">
         </div>
         <div class="form-group">
-          <label for="releaseDate">ReleaseDate</label>
-          <input type="text" class="form-control" name="releaseDate" id="releaseDate" placeholder="releaseDate">
+          <input type="text" class="form-control" name="releaseDate" id="releaseDate" placeholder="Release Date">
         </div>
-        <div class="buttonDiv">
-         <button class= "addAlbum"type="submit">Add album</button>
+        <div class="form-group">
+          <button class="addAlbum" type="submit">Add</button>
         </div>
       </form>
 

@@ -3,7 +3,8 @@
 
 ## To get this project running
 1. `npm install`
-1. `npm start` to run (uses nodemon)
+2. `npm start` to run (uses nodemon)
+3. Navigate to http://localhost:3000/ on a browser
 
 Team name: #befitting-penguin  
 Team: Jeffrey Ware, Jay Cribas  

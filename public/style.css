@@ -1,10 +1,18 @@
-
 .row {
   padding: 1%;
 }
 
 .jumbo {
   font-size: 2em;
+}
+
+.form-inline {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  overflow: auto;
 }
 
 .jumbotron {
@@ -14,17 +22,19 @@
   color: white;
   text-shadow: 2px 2px 9px #000000;
 }
-.buttonDiv{
-display:inline-block;
-padding-left: 30px;
+
+.addAlbumHeader {
+  margin-right: 5px;;
 }
+
 .addAlbum{
- border-radius: 7px;
- width:120px;
- height: 30px;
- color:white;
- border:none;
+  border-radius: 7px;
+  width: 50px;
+  height: 30px;
+  color: white;
+  border: none;
 }
+
 .edit-form {
   display: none;
 }
@@ -33,6 +43,7 @@ padding-left: 30px;
   display: none;
   position: absolute;
   margin-top: 20px;
+  margin-right: 5px;
   bottom: 40px;
   border: 0px;
 }
@@ -47,7 +58,7 @@ h3 {
   font-size: 2vw;
 }
 
-h4 {
+h4, h5 {
   margin: 0;
 }
 
@@ -64,12 +75,7 @@ h6:before {
   content: 'Release Date\A';
 }
 
-input {
-  font-family: 'Shadows Into Light', cursive;
-  letter-spacing: .1em;
-}
-
-.shadows {
+input, .shadows {
   font-family: 'Shadows Into Light', cursive;
   letter-spacing: .1em;
 }
@@ -99,22 +105,39 @@ span {
 }
 
 .delete-btn {
-  margin-left: 50px;
+  margin-left: 55px;
   position: absolute;
   margin-top: 20px;
   bottom: 40px;
   border: 0px;
 }
 
-h1, h3 {
+h1,h3,h4,h5,h6,label,button {
   font-family: 'Lato', sans-serif;
+}
+
+h1, h3 {
   font-weight: 900;
   text-transform: uppercase;
 }
 
+h4,h5 {
+  font-weight: 700;
+}
+
+h6 {
+  font-weight: 400;
+}
 
 @media only screen
   and (max-width: 768px) {
+    .form-inline {
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .form-group {
+      width: 100%;
+    }
     .row {
       padding: 0;
     }
